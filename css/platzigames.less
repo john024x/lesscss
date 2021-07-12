@@ -1,0 +1,99 @@
+@import "globales.less";
+.intro {
+	width: 1340px;
+	height: 650px;
+	padding: 10px;
+	margin: 0 auto;
+	position: relative;
+	background-color: @color-claro;
+	.sobra-caja;
+	&__imagen{
+		width: 1320px;
+		position: absolute;
+		img {
+			width: 100%;
+			height: 624px;
+			object-fit: cover;
+		}
+	}
+	&__contenido{
+		width: 50%;
+		margin: 0 auto;
+		position: absolute;
+		top: 156px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		color: @color-claro;
+	}
+	&__categoria{
+		.Oswald;
+		color: fade(@color-claro,50%);
+	}
+	&__titulo{
+		font-size: 50px;
+		line-height: @Fuente-base + 40%;
+	}
+	&__autor{
+		width: 150px;
+		margin: 0 auto;
+		position: absolute;
+		top: 400px;
+		left: 0;
+		right: 0;
+		color: @color-claro;
+		img{
+			width: 60px;
+			height: 50px;
+			float: left;
+			padding-right: 10px;
+			border-radius: 10em;
+		}
+		span{
+			display: inline-block;
+		}
+		&-titulo{
+			color: fade(@color-claro,50%);
+		}
+	}
+}
+.articulo--principal{
+	max-width: 660px;
+	margin: 0 auto;
+	line-height: @Fuente-base + 10%;
+	&__intro{
+	  font-size: @Fuente-base + 8%;
+	}
+	
+	h2{
+	  margin: 40px 0 40px 0;
+	  font-size: 50px;
+	  text-align: center;
+	}
+	h3{
+	  color: @color-secundario;   
+	}
+}
+.contenedor--cajas{
+	width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+.caja{
+	max-width: 430px;
+	.sobra-caja;
+	&__contenido{
+		padding: 25px;
+		background-color: @color-claro;
+	}
+	span{
+		color: @color-secundario; 
+		.Oswald;
+	}
+	a{
+		text-decoration: none;
+		color: @color-variacion;
+		.Oswald;
+	}
+}
